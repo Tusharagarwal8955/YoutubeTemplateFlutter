@@ -1,9 +1,9 @@
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:material_x/material_x.dart';
 import 'package:youtube_clone_app/page/Youtubeexplore.dart';
+import 'package:youtube_clone_app/page/Youtubesubscriptions.dart';
 import 'package:youtube_clone_app/page/youtubeHome.dart';
 //import 'package:youtube_clone_app/modules/row.dart';
-
 import 'modules/bottom_bar.dart';
 
 
@@ -33,7 +33,10 @@ class _HomePageState extends State<HomePage> {
        });
       return selectedBottom == "Home"
           ? new YoutubeHome()
-          : new Youtubeexplore();
+          : selectedBottom == "Explore"
+          ?  new Youtubeexplore() 
+          :  new Youtubesubscriptions()
+          ;
     }
 
     return showPage(selectedBottom).mxScaffold(
@@ -91,25 +94,6 @@ class _HomePageState extends State<HomePage> {
       ),
     ],
         ),
-        appBar: "Youtube".textMaterialColorBlack().mxAppBar(
-            //automaticallyImplyLeading: false,
-            elevation: 1.0,
-            titleSpacing: 0.0,
-            leading: FontAwesomeIcons.youtube.mxIcons(color: Colors.red),
-     
-            brightness: Brightness.light,
-            backgroundColor: Colors.white,
-            actions: <Widget>[
-              Icons.videocam
-                  .mxIcons(color: Colors.black)
-                  .mcIconButton(onPressed: () {}),
-              Icons.search
-                  .mxIcons(color: Colors.black)
-                  .mcIconButton(onPressed: () {}),
-              "Z"
-                  .text()
-                  .circleAvatar(backgroundColor: Colors.green[900], radius: 15)
-                  .mxrp(value: 10)
-            ]));
+      );
   }
 }

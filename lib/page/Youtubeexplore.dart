@@ -100,7 +100,7 @@ class Youtubeexplore extends StatelessWidget {
                   "Fashion & Beauty".text(
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
-                    style: TextStyle(fontSize: 14)
+                    style: TextStyle(fontSize: 14,color: Colors.white)
                   ).mxtp(value: 5),
                 ])
                 //gray
