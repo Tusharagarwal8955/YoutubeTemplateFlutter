@@ -1,6 +1,5 @@
 import 'package:material_x/material_x.dart';
 
-
 class YoutubeHorizontalList extends StatefulWidget {
   @override
   _YoutubeHorizontalListState createState() => _YoutubeHorizontalListState();
@@ -20,7 +19,7 @@ class _YoutubeHorizontalListState extends State<YoutubeHorizontalList> {
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
                     style: TextStyle(fontSize: 12)),
-                    3.0.sizedHeight(),
+                3.0.sizedHeight(),
                 "Md Zeeshan".textMaterial(color: Colors.grey, fontsize: 12),
               ])
               .mxContainer()

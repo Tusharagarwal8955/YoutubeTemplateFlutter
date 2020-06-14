@@ -13,7 +13,7 @@ class _YoutubesubscriptionsState extends State<Youtubesubscriptions> {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      appBar(),
+      appBar(context),
       mxRowCC.list([
         (context, index) {
           return <Widget>[
@@ -27,11 +27,14 @@ class _YoutubesubscriptionsState extends State<Youtubesubscriptions> {
             height: 100,
             width: mxwidth(context) - 70,
             padding: EdgeInsets.all(0.0)),
-        "All".textMaterialColorblue().circleAvatar(
-          backgroundColor: Colors.white
-        ).toCenter().mxGesture(onTap: () {}).mxContainer()
+        "All"
+            .textMaterialColorblue()
+            .circleAvatar(backgroundColor: Colors.white)
+            .toCenter()
+            .mxGesture(onTap: () {})
+            .mxContainer()
       ]),
-       YoutubeVideoList(),
+      YoutubeVideoList(),
       Divider(
         height: 8,
       ),
@@ -40,5 +43,3 @@ class _YoutubesubscriptionsState extends State<Youtubesubscriptions> {
         );
   }
 }
-
-

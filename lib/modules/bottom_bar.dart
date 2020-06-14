@@ -1,6 +1,5 @@
 import 'package:material_x/material_x.dart';
 
-
 class BottomBar extends StatefulWidget {
   final List<Widget> bottomNavBar;
 
@@ -12,13 +11,12 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
-    return mxRow
-        .list(widget.bottomNavBar)
-        .mxContainer(height: 65, padding: EdgeInsets.zero,
+    return mxRow.list(widget.bottomNavBar).mxContainer(
+        height: 65,
+        padding: EdgeInsets.zero,
         blurRadius: 2,
         shadowColor: Colors.black,
-        color: Colors.white
-        );
+        color: Colors.white);
   }
 }
 

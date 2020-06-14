@@ -6,8 +6,8 @@ class Youtubelibrary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return mxListView.list([
-      appBar(),
-      "Recent".text().mxlbtp(l: 20,t: 16,b: 5),
+      appBar(context),
+      "Recent".text().mxlbtp(l: 20, t: 16, b: 5),
       RecentVideo().mxContainer(),
       Divider(),
       //1
@@ -24,8 +24,9 @@ class Youtubelibrary extends StatelessWidget {
         10.0.sizedWidth(),
         mxColumn.list([
           "Downloads".text().mxtp(value: 4),
-        
-          "10 videos".textMaterial(color: Colors.grey,fontsize: 11).mxtp(value: 4),
+          "10 videos"
+              .textMaterial(color: Colors.grey, fontsize: 11)
+              .mxtp(value: 4),
         ])
       ]).mxContainer(onTap: () {}),
       //3

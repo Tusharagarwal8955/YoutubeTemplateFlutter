@@ -7,8 +7,8 @@ List widgetname = [
   'youtubelibrary'
 ];
 
-void main(){
- widgetname.forEach((element) {
+void main() {
+  widgetname.forEach((element) {
     mxStless(element, 'lib/page');
- });
+  });
 }

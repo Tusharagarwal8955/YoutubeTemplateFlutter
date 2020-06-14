@@ -37,8 +37,7 @@ class _YoutubeVideoListState extends State<YoutubeVideoList> {
             10.0.sizedWidth(),
             "Views: 10K.".textMaterial(),
           ]),
-            trailing: Icons.more_vert.mxIcons(),
-          
+          trailing: Icons.more_vert.mxIcons(),
         ),
         Divider(
           height: 1,

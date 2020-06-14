@@ -1,7 +1,8 @@
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:material_x/material_x.dart';
+import 'package:youtube_clone_app/page/Search.dart';
 
-Widget appBar() {
+Widget appBar(context) {
   return "Youtube".textMaterialColorBlack().mxAppBar(
       //automaticallyImplyLeading: false,
       elevation: 1.0,
@@ -15,7 +16,9 @@ Widget appBar() {
             .mcIconButton(onPressed: () {}),
         Icons.search
             .mxIcons(color: Colors.black)
-            .mcIconButton(onPressed: () {}),
+            .mcIconButton(onPressed: () {
+              SearchBar().mxRoutePage(context).fadePush();;
+            }),
         "Z"
             .text()
             .circleAvatar(backgroundColor: Colors.green[900], radius: 15)

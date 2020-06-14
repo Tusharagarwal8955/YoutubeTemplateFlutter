@@ -6,14 +6,13 @@ class AdsYoutube extends StatefulWidget {
 }
 
 class _AdsYoutubeState extends State<AdsYoutube> {
-  
-
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      "https://www.marketing91.com/wp-content/uploads/2019/03/Types-of-YouTube-ads-1.jpg"
+      "https://raw.githubusercontent.com/Aliimam2001/youtube_clone_material_x/master/Search.png"
           .decorationINToCover()
-          .mxContainer(height: 220, width: mxwidth(context),padding: EdgeInsets.zero)
+          .mxContainer(
+              height: 170, width: mxwidth(context), padding: EdgeInsets.zero)
           .mxap(value: 15),
       // 7.0.sizedHeight(),
       ListTile(

@@ -10,7 +10,7 @@ class Youtubeexplore extends StatelessWidget {
   Widget build(BuildContext context) {
     return mxListView.list([
       //------------------------Beginner---------------------------//
-      appBar(),
+      appBar(context),
       mxRowCSB.list([
         mxRowSS
             .list([
@@ -98,18 +98,17 @@ class Youtubeexplore extends StatelessWidget {
                   5.0.sizedWidth(),
                   FontAwesomeIcons.tshirt.mxIcons(color: Colors.white),
                   20.0.sizedWidth(),
-                  "Fashion & Beauty".text(
-                    overflow: TextOverflow.ellipsis,
-                    maxLines: 1,
-                    style: TextStyle(fontSize: 14,color: Colors.white)
-                  ).mxtp(value: 5),
+                  "Fashion & Beauty"
+                      .text(
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 1,
+                          style: TextStyle(fontSize: 14, color: Colors.white))
+                      .mxtp(value: 5),
                 ])
                 //gray
                 .mxContainerGradient(
-                  gradient: [
-                    Colors.black,Colors.grey.withOpacity(0.7)
-                  ].mxLGClamp(),
-                
+                  gradient:
+                      [Colors.black, Colors.grey.withOpacity(0.7)].mxLGClamp(),
                   width: mxwidth(context) / 2 - 20,
                   rounded: 6,
                   onTap: () {},
@@ -125,7 +124,9 @@ class Youtubeexplore extends StatelessWidget {
                   5.0.sizedWidth(),
                   FontAwesomeIcons.lightbulb.mxIcons(color: Colors.white),
                   20.0.sizedWidth(),
-                  "Learning".textMaterialColorWhite(fontsize: 14).mxtp(value: 5),
+                  "Learning"
+                      .textMaterialColorWhite(fontsize: 14)
+                      .mxtp(value: 5),
                 ])
                 //green
                 .mxContainer(
@@ -173,13 +174,15 @@ class Youtubeexplore extends StatelessWidget {
           ])
           .mxlrp(l: 10, r: 10)
           .mxtp(value: 10),
-          20.0.sizedHeight(),
-      YoutubeHorizontalList().mxtp(value: 20).mxContainer(
-          height: 170, padding: EdgeInsets.zero, color: Colors.white).mxCard(),
+      20.0.sizedHeight(),
+      YoutubeHorizontalList()
+          .mxtp(value: 20)
+          .mxContainer(
+              height: 170, padding: EdgeInsets.zero, color: Colors.white)
+          .mxCard(),
       YoutubeVideoList(),
       Divider(
         height: 8,
-        
       )
     ]).mxScaffold(backgroundColor: Colors.white.withOpacity(0.1));
   }
