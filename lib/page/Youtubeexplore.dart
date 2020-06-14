@@ -1,8 +1,8 @@
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:material_x/material_x.dart';
-//import 'package:youtube_clone_app/modules/horizontal_list.dart';
-import 'package:youtube_clone_app/modules/row.dart';
+
 import 'package:youtube_clone_app/modules/horizontal_list.dart';
+import 'package:youtube_clone_app/modules/widgets.dart';
 import 'package:youtube_clone_app/modules/youtube_videos_list.dart';
 
 class Youtubeexplore extends StatelessWidget {
@@ -10,6 +10,7 @@ class Youtubeexplore extends StatelessWidget {
   Widget build(BuildContext context) {
     return mxListView.list([
       //------------------------Beginner---------------------------//
+      appBar(),
       mxRowCSB.list([
         mxRowSS
             .list([
