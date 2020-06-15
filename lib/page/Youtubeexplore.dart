@@ -98,7 +98,7 @@ class Youtubeexplore extends StatelessWidget {
                   5.0.sizedWidth(),
                   FontAwesomeIcons.tshirt.mxIcons(color: Colors.white),
                   20.0.sizedWidth(),
-                  "Fashion & Beauty"
+                  "Fashion & Be.."
                       .text(
                           overflow: TextOverflow.ellipsis,
                           maxLines: 1,

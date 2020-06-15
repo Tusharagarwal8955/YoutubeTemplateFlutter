@@ -47,15 +47,25 @@ class Youtubelibrary extends StatelessWidget {
         10.0.sizedWidth(),
         Icons.watch_later.mxIcons(color: Colors.grey[600]),
         10.0.sizedWidth(),
-        "Watch Later".text().mxtp(value: 4),
+        mxColumn.list([
+          "Watch Later".text().mxtp(value: 4),
+          "100 unwatched videos "
+              .textMaterial(color: Colors.grey, fontsize: 11)
+              .mxtp(value: 4),
+        ])
       ]).mxContainer(onTap: () {}),
-      Divider(
-        color: Colors.black,
-      ),
+      Divider(),
       mxRowCSB.list([
-       "Playlist".text().mxlbtp(l: 20, t: 10, b: 5),
+        "Playlist".text().mxlbtp(l: 20, t: 10, b: 5),
         DropDown(),
-      ])
+      ]),
+
+      mxRowSS.list([
+        5.0.sizedWidth(),
+        Icons.add.mxIcons(color: Colors.blue[800]),
+        8.0.sizedWidth(),
+        "New playlist".textMaterial(color: Colors.blue[800]).mxtp(value: 4),
+      ]).mxContainer(),
     ]);
   }
 }
