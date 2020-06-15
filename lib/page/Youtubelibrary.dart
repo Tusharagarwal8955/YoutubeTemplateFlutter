@@ -66,6 +66,17 @@ class Youtubelibrary extends StatelessWidget {
         8.0.sizedWidth(),
         "New playlist".textMaterial(color: Colors.blue[800]).mxtp(value: 4),
       ]).mxContainer(),
+      mxRowSS.list([
+        5.0.sizedWidth(),
+        Icons.thumb_up.mxIcons(),
+        8.0.sizedWidth(),
+        mxColumn.list([
+          "Like videos".text().mxtp(value: 4),
+          "164 videos "
+              .textMaterial(color: Colors.grey, fontsize: 11)
+              .mxtp(value: 4),
+        ])
+      ]).mxContainer(),
     ]);
   }
 }

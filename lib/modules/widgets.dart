@@ -17,7 +17,7 @@ Widget appBar(context) {
         Icons.search
             .mxIcons(color: Colors.black)
             .mcIconButton(onPressed: () {
-              SearchBar().mxRoutePage(context).fadePush();;
+              SearchBar().mxRoutePage(context).fadePush();
             }),
         "Z"
             .text()
