@@ -44,7 +44,7 @@ class YoutubeHome extends StatelessWidget {
               .mxContainer(
                   color: Colors.white,
                   shadowColor: Colors.grey,
-                  blurRadius: 100,
+                  blurRadius: 1,
                   width: mxwidth(context),
                   height: 50.0,
                   padding: EdgeInsets.zero)

@@ -1,5 +1,4 @@
 import 'package:material_x/material_x.dart';
-import 'package:youtube_clone_app/modules/widgets.dart';
 
 class SearchBar extends StatefulWidget {
   @override
