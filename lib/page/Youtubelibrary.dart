@@ -1,4 +1,5 @@
 import 'package:material_x/material_x.dart';
+import 'package:youtube_clone_app/modules/dropdown.dart';
 import 'package:youtube_clone_app/modules/recently.dart';
 import 'package:youtube_clone_app/modules/widgets.dart';
 
@@ -48,6 +49,13 @@ class Youtubelibrary extends StatelessWidget {
         10.0.sizedWidth(),
         "Watch Later".text().mxtp(value: 4),
       ]).mxContainer(onTap: () {}),
+      Divider(
+        color: Colors.black,
+      ),
+      mxRowCSB.list([
+       "Playlist".text().mxlbtp(l: 20, t: 10, b: 5),
+        DropDown(),
+      ])
     ]);
   }
 }
