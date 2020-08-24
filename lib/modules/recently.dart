@@ -6,13 +6,12 @@ class RecentVideo extends StatelessWidget {
     return (context, index) {
       return mxColumn
           .list([
-            "https://user-images.githubusercontent.com/45489310/78457255-b9d4f980-765d-11ea-8d17-78bb21297de6.png"
+            "https://i.ytimg.com/an_webp/b4OH3vBANa4/mqdefault_6s.webp?du=3000&sqp=CIrPkPoF&rs=AOn4CLAiHZHCR7upFaFhwOFtuR2aydB5iQ"
                 .decorationINToCover()
                 .mxContainer(width: 160, height: 80, padding: EdgeInsets.zero),
             ListTile(
-              title: "Flutter Tutorial || Basic Material-X How to Use || Hindi"
-                  .textMaterial(fontsize: 10),
-              subtitle: "Md Zeeshan".textMaterial(
+              title: "A tribute to MS Dhoni".textMaterial(fontsize: 10),
+              subtitle: "Mahendra Singh Dhoni".textMaterial(
                   color: Colors.grey.withOpacity(0.7), fontsize: 10),
               trailing:
                   Icons.more_vert.mxIcons(color: Colors.grey).mxtp(value: 10),

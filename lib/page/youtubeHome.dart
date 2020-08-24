@@ -6,15 +6,7 @@ import 'package:youtube_clone_app/modules/widgets.dart';
 import 'package:youtube_clone_app/modules/youtube_videos_list.dart';
 //import 'package:youtube_clone_app/view/view.dart';
 
-List data = [
-  "Zeeshan",
-  "Ali imam",
-  "Arsalan",
-  "Arman",
-  "Arshad",
-  "Arfat",
-  "Aftab"
-];
+List data = ["Tushar", "Ali ", "Arsalan", "Arman", "Arshad", "Arfat", "Aftab"];
 
 class YoutubeHome extends StatelessWidget {
   @override
@@ -49,7 +41,7 @@ class YoutubeHome extends StatelessWidget {
                   height: 50.0,
                   padding: EdgeInsets.zero)
               .toCenter(),
-          AdsYoutube().mxContainer(color: Colors.white),
+//          AdsYoutube().mxContainer(color: Colors.white),
           Divider(
             height: 1,
           ),

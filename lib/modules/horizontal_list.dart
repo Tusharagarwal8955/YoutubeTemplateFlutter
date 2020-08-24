@@ -10,17 +10,16 @@ class _YoutubeHorizontalListState extends State<YoutubeHorizontalList> {
   Widget build(BuildContext context) {
     return (context, index) {
       return <Widget>[
-        "https://i.ytimg.com/vi/WUqSMjlzCRQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBTorEh6or4UR_Kp8HkT1illUhDqg"
+        "https://i.ytimg.com/vi/tO7CCP7liwI/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCBiv75N9Uzkl_JS25g2cBr3MFHjA"
             .mxImageNetwork(),
         mxRow.list([
           mxColumn
               .list([
-                "Flutter Tutorial || Basic Material-X How to Use || Hindi".text(
+                "Coldplay: Everyday Life Live in Jordan".text(
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
                     style: TextStyle(fontSize: 12)),
                 3.0.sizedHeight(),
-                "Md Zeeshan".textMaterial(color: Colors.grey, fontsize: 12),
               ])
               .mxContainer()
               .mxFlexable(),
